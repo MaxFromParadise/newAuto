@@ -1394,8 +1394,12 @@ span.swiper-pagination-bullet-active {
             justify-content: center;
   }
 
+  .trade__title:not(:last-child) {
+    margin-bottom: 4.8em;
+  }
+
   .form-trade {
-    left: 0;
+    position: static;
     padding: 3.4375rem 2.5rem;
     width: 100%;
   }
@@ -1451,6 +1455,12 @@ span.swiper-pagination-bullet-active {
 }
 
 @media (max-width: 37.5rem) {
+  .no-webp .gift #gift{
+    background: url("../img/gift/gift2__bg.jpg") center center/cover no-repeat; }
+
+  .no-webp .gift #credit{
+    background: url("../img/gift/credit2__bg.jpg") center center/cover no-repeat; }
+
   .grid-gift {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1469,6 +1479,7 @@ span.swiper-pagination-bullet-active {
 
   .item-grid-gift {
     width: 100%;
+    height: 21.875rem;
   }
 }
 
@@ -1727,3 +1738,11 @@ span.swiper-pagination-bullet-active {
 .webp .gift #taxi{ background: url(../img/gift/taxi__bg.webp) center center/cover no-repeat; }
 
 .webp .trade__container{ background: url(../img/trade/bg.webp) 0 0 no-repeat; }
+
+@media (max-width: 37.5rem){
+  .webp .gift #gift{ background: url(../img/gift/gift2__bg.webp) center center/cover no-repeat; }
+}
+
+@media (max-width: 37.5rem){
+  .webp .gift #credit{ background: url(../img/gift/credit2__bg.webp) center center/cover no-repeat; }
+}
