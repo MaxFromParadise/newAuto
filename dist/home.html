@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230328212036">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title">Быстрый подбор нового автомобиля</h1>
+				<form class="header__form form-header" action="#">
+					<div class="form-header__flex flex-form-header">
+						<div class="flex-form-header__top top-flex-form-header">
+							<div class="top-flex-form-header__item item-form-header">
+								<div class="item-form-header__title">Марка</div>
+								<select name="form[]" data-class-modif="form">
+									<option value="1" selected>Выбрать...</option>
+									<option value="2">Пункт №1</option>
+									<option value="3">Пункт №2</option>
+									<option value="4">Пункт №3</option>
+								</select>
+							</div>
+							<div class="top-flex-form-header__item item-form-header">
+								<div class="item-form-header__title">Модель</div>
+								<select name="form[]" data-class-modif="form">
+									<option value="1" selected>Выбрать...</option>
+									<option value="2">Пункт №1</option>
+									<option value="3">Пункт №2</option>
+									<option value="4">Пункт №3</option>
+								</select>
+							</div>
+							<div class="top-flex-form-header__item item-form-header">
+								<div class="item-form-header__title">Цена от, руб.</div>
+								<select name="form[]" data-class-modif="form">
+									<option value="1" selected>Не выбрана</option>
+									<option value="2">Пункт №1</option>
+									<option value="3">Пункт №2</option>
+									<option value="4">Пункт №3</option>
+								</select>
+							</div>
+							<div class="top-flex-form-header__item item-form-header">
+								<div class="item-form-header__title">Цена до, руб.</div>
+								<select name="form[]" data-class-modif="form">
+									<option value="1" selected>Не выбрана</option>
+									<option value="2">Пункт №1</option>
+									<option value="3">Пункт №2</option>
+									<option value="4">Пункт №3</option>
+								</select>
+							</div>
+						</div>
+						<div class="flex-form-header__bottom bottom-flex-form-header">
+							<div class="bottom-flex-form-header__top top-bottom-flex-form-header">
+								<div class="top-bottom-flex-form-header__title">КПП</div>
+								<div class="options">
+									<div class="options__item">
+										<input id="o_1" class="options__input" type="radio" value="1" name="option">
+										<label for="o_1" class="options__label"><span class="options__text">Любая</span></label>
+									</div>
+									<div class="options__item">
+										<input id="o_2" class="options__input" type="radio" value="2" name="option">
+										<label for="o_2" class="options__label"><span class="options__text">АКПП</span></label>
+									</div>
+									<div class="options__item">
+										<input id="o_3" class="options__input" type="radio" value="3" name="option">
+										<label for="o_3" class="options__label"><span class="options__text">МКПП</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="bottom-flex-form-header__btn">
+								<button type="submit" class="button">Показать <span>320</span> предложений </button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__application application">
+				<div class="application__container">
+					<div class="application__body body-application">
+						<div class="body-application__item item-body-application">
+							<div class="item-body-application__number">55</div>
+							<div class="item-body-application__content"> программ кредитования</div>
+						</div>
+						<div class="body-application__item item-body-application">
+							<div class="item-body-application__number">20</div>
+							<div class="item-body-application__content">банков партнеров</div>
+						</div>
+						<div class="body-application__item item-body-application">
+							<div class="item-body-application__number">2023</div>
+							<div class="item-body-application__content">возобновленный Автокредит с господдержкой</div>
+						</div>
+					</div>
+					<h2 class="application__title">Заявка на автокредит</h2>
+					<form class="header__form application__form form-application" action="#">
+						<div class="form-application__input">
+							<input id="in_1" autocomplete="off" type="name" name="form[]" data-error="Ошибка" placeholder="Василий" class="input">
+							<label for="in_1">Ваше имя</label>
+						</div>
+						<div class="form-application__input">
+							<input id="in_2" autocomplete="off" type="tel" name="form[]" data-error="Помилка" placeholder="+7" class="input">
+							<label for="in_2">Телефон</label>
+						</div>
+						<div class="form-application__btn">
+							<button type="submit" class="button form-application__button">Отправить заявку</button>
+							<div class="checkbox">
+								<input id="c_1" required data-error="Ошибка" checked class="checkbox__input" type="checkbox" value="1" name="form[]">
+								<label for="c_1" class="checkbox__label"><span class="checkbox__text">Даю согласие на обработку персональных данных</span></label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="page__gift gift">
+				<div class="gift__container">
+					<div class="gift__grid grid-gift">
+						<div id="gift" class="grid-gift__item item-grid-gift">
+							<h3 class="item-grid-gift__title">Подарок</h3>
+							<div class="item-grid-gift__descr">Доп.оборудование до 250 000 рублей в подарок</div>
+							<a href="#" class="item-grid-gift__button">Подробнее</a>
+						</div>
+						<div id="support" class="grid-gift__item item-grid-gift">
+							<h3 class="item-grid-gift__title">Господдержка</h3>
+							<div class="item-grid-gift__descr">Автокредит с господдержкой</div>
+							<a href="#" class="item-grid-gift__button">Подробнее</a>
+						</div>
+						<div id="credit" class="grid-gift__item item-grid-gift">
+							<h3 class="item-grid-gift__title">Авторассрочка</h3>
+							<div class="item-grid-gift__descr">Авторассочка 0% переплат</div>
+							<a href="#" class="item-grid-gift__button">Подробнее</a>
+						</div>
+						<div id="taxi" class="grid-gift__item item-grid-gift">
+							<h3 class="item-grid-gift__title">Господдержка</h3>
+							<div class="item-grid-gift__descr">Автокредит с господдержкой</div>
+							<a href="#" class="item-grid-gift__button">Подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__trust trust">
+				<div class="trust__container">
+					<h2 class="trust__title">Нам Доверяют!</h2>
+					<div class="trust__body body-trust">
+						<div class="body-trust__item item-body-trust">
+							<div class="item-body-trust__rate">
+								<div class="item-body-trust__logo">
+									<picture><source srcset="img/trust/otzovik__logo.webp" type="image/webp"><img src="img/trust/otzovik__logo.png" alt="Picture"></picture>
+								</div>
+								<div class="item-body-trust__reference">Рекомендуют 89%</div>
+							</div>
+							<div class="item-body-trust__location">Автосалон Аванта (Россия, Москва)</div>
+						</div>
+						<div class="body-trust__item item-body-trust">
+							<div class="item-body-trust__location">Автосалон Аванта (Россия, Москва)</div>
+							<div class="item-body-trust__rate">
+								<div class="item-body-trust__logo">
+									<picture><source srcset="img/trust/yandex__logo.webp" type="image/webp"><img src="img/trust/yandex__logo.png" alt="Picture"></picture>
+								</div>
+								<div class="item-body-trust__reference">Рекомендуют 89%</div>
+							</div>
+						</div>
+						<div class="body-trust__item item-body-trust">
+							<div class="item-body-trust__rate">
+								<div class="item-body-trust__logo">
+									<picture><source srcset="img/trust/google__logo.webp" type="image/webp"><img src="img/trust/google__logo.png" alt="Picture"></picture>
+								</div>
+								<div class="item-body-trust__reference">Рекомендуют 89%</div>
+							</div>
+							<div class="item-body-trust__location">Автосалон Аванта (Россия, Москва)</div>
+						</div>
+					</div>
+					<div class="trust__review">
+						<div class="trust__slider swiper">
+							<div class="trust__wrapper swiper-wrapper">
+								<div class="trust__slide swiper-slide slide-trust">
+									<div class="slide-trust__body body-slide-trust">
+										<div class="body-slide-trust__title">Роман Валентинович</div>
+										<div class="body-slide-trust__descr">Здравствуйте, я сегодня в автосалоне Аванта купил Киа К5. Все было быстро, менеджер Виталий молодец, просто на пятерку, все обяснил, все показал, быстро оформили. Я доволен и менеджером Виталием и автосалоном!</div>
+										<div class="body-slide-trust__bottom">
+											<div class="body-slide-trust__rate">
+												<img src="img/trust/rate__4.5.svg" alt="rating">
+											</div>
+											<div class="body-slide-trust__date">07.01.2023</div>
+										</div>
+									</div>
+									<div class="slide-trust__image">
+										<picture><source srcset="img/trust/roman.webp" type="image/webp"><img src="img/trust/roman.png" alt="Picture"></picture>
+									</div>
+								</div>
+								<div class="trust__slide swiper-slide slide-trust">
+									<div class="slide-trust__body body-slide-trust">
+										<div class="body-slide-trust__title">Роман Валентинович</div>
+										<div class="body-slide-trust__descr">Здравствуйте, я сегодня в автосалоне Аванта купил Киа К5. Все было быстро, менеджер Виталий молодец, просто на пятерку, все обяснил, все показал, быстро оформили. Я доволен и менеджером Виталием и автосалоном!</div>
+										<div class="body-slide-trust__bottom">
+											<div class="body-slide-trust__rate">
+												<img src="img/trust/rate__4.5.svg" alt="rating">
+											</div>
+											<div class="body-slide-trust__date">07.01.2023</div>
+										</div>
+									</div>
+									<div class="slide-trust__image">
+										<picture><source srcset="img/trust/roman.webp" type="image/webp"><img src="img/trust/roman.png" alt="Picture"></picture>
+									</div>
+								</div>
+								<div class="trust__slide swiper-slide slide-trust">
+									<div class="slide-trust__body body-slide-trust">
+										<div class="body-slide-trust__title">Роман Валентинович</div>
+										<div class="body-slide-trust__descr">Здравствуйте, я сегодня в автосалоне Аванта купил Киа К5. Все было быстро, менеджер Виталий молодец, просто на пятерку, все обяснил, все показал, быстро оформили. Я доволен и менеджером Виталием и автосалоном!</div>
+										<div class="body-slide-trust__bottom">
+											<div class="body-slide-trust__rate">
+												<img src="img/trust/rate__4.5.svg" alt="rating">
+											</div>
+											<div class="body-slide-trust__date">07.01.2023</div>
+										</div>
+									</div>
+									<div class="slide-trust__image">
+										<picture><source srcset="img/trust/roman.webp" type="image/webp"><img src="img/trust/roman.png" alt="Picture"></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-prev">
+							<img src="img/trust/arrow__left.svg" alt="left">
+						</div>
+						<div class="swiper-button-next">
+							<img src="img/trust/arrow__left.svg" alt="left">
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div class="page__trade trade">
+				<div class="trade__container">
+					<h2 class="trade__title">Обмен автомобилей (Trade-in) в Москве</h2>
+					<form class="trade__form form-trade" action="#">
+						<div class="form-trade__inputs">
+							<div class="form-application__input">
+								<input id="in_1" autocomplete="off" type="name" name="form[]" data-error="Ошибка" placeholder="Василий" class="input">
+								<label for="in_1">Ваше имя</label>
+							</div>
+							<div class="top-flex-form-header__item item-form-header">
+								<div class="item-form-header__title">Марка</div>
+								<select name="form[]" data-class-modif="form">
+									<option value="1" selected>Выбрать...</option>
+									<option value="2">Пункт №1</option>
+									<option value="3">Пункт №2</option>
+									<option value="4">Пункт №3</option>
+								</select>
+							</div>
+							<div class="top-flex-form-header__item item-form-header">
+								<div class="item-form-header__title">Модель</div>
+								<select name="form[]" data-class-modif="form">
+									<option value="1" selected>Выбрать...</option>
+									<option value="2">Пункт №1</option>
+									<option value="3">Пункт №2</option>
+									<option value="4">Пункт №3</option>
+								</select>
+							</div>
+							<div class="form-application__input">
+								<input id="in_2" autocomplete="off" type="tel" name="form[]" data-error="Помилка" placeholder="+7" class="input">
+								<label for="in_2">Телефон</label>
+							</div>
+							<div class="top-flex-form-header__item item-form-header">
+								<div class="item-form-header__title">Цена от, руб.</div>
+								<select name="form[]" data-class-modif="form">
+									<option value="1" selected>Не выбрана</option>
+									<option value="2">Пункт №1</option>
+									<option value="3">Пункт №2</option>
+									<option value="4">Пункт №3</option>
+								</select>
+							</div>
+							<div class="top-flex-form-header__item item-form-header">
+								<div class="item-form-header__title">Цена до, руб.</div>
+								<select name="form[]" data-class-modif="form">
+									<option value="1" selected>Не выбрана</option>
+									<option value="2">Пункт №1</option>
+									<option value="3">Пункт №2</option>
+									<option value="4">Пункт №3</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-trade__btn">
+							<button type="submit" class="form-trade__button">Жду звонка</button>
+							<div class="checkbox">
+								<input id="c_2" required data-error="Ошибка" checked class="checkbox__input" type="checkbox" value="1" name="form[]">
+								<label for="c_2" class="checkbox__label"><span class="checkbox__text">Даю согласие на обработку персональных данных</span></label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230328212036"></script>
+</body>
+
+</html>
